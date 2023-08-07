@@ -12,8 +12,4 @@ const PhoneLink = ({ id }) => {
     );
 };
 
-// IconButton.propTypes = {
-//   'aria-label': PropTypes.string.isRequired,
-// };
-
 export default PhoneLink;
