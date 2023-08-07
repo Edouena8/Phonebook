@@ -1,11 +1,12 @@
 import { Route, Routes } from 'react-router-dom';
-import { Layout } from './Layout';
+import { Layout } from './Layout/Layout';
 import { lazy, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { refreshUser } from 'redux/auth/operations';
 import { useAuth } from 'hooks/useAuth';
 import { RestrictedRoute } from './RestrictedRoute';
 import { PrivateRoute } from './PrivateRoute';
+import LoadModal from './LoadModal/LoadModal';
 
 const HomePage = lazy(() => import('../pages/Home'));
 const RegisterPage = lazy(() => import('../pages/Register'));
@@ -21,7 +22,8 @@ export const App = () => {
   }, [dispatch]);
 
   return isRefreshing ? (
-    'Fetching user data...'
+  <LoadModal/>
+    // 'Fetching user data...'
   ) : (
     <div>
       <Routes>

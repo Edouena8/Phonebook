@@ -1,0 +1,1 @@
+export const selectContactId = state => state.contactId;

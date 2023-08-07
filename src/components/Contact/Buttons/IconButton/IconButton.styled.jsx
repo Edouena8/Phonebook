@@ -1,0 +1,26 @@
+import styled from '@emotion/styled';
+
+export const IconBtn = styled.button`
+  margin: 0;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font: inherit;
+  background-color: red;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: scale(1);
+  box-shadow: 0 0 5px 5px rgba(34, 60, 80, 0.2);
+  transition: box-shadow 0.5s, transform 0.5s;
+
+  &:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px 7px rgba(34, 60, 80, 0.2);
+    transition: box-shadow 0.5s, transform 0.5s;
+  }
+`;
