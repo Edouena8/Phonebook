@@ -5,7 +5,7 @@ import { selectContacts } from 'redux/contacts/selectors';
 import IconBtnEdit from '../Buttons/IconBtnEdit/IconBtnEdit';
 import IconButton from '../Buttons/IconButton/IconButton';
 import PhoneLink from '../Buttons/PhoneLink/PhoneLink';
-import { ActionsList, Avatar, AvatarWrap, Description, Name, Tag } from './Profile.styled';
+import { ActionsList, Avatar, Description, Name, Tag } from './Profile.styled';
 
 export const Profile = () => {
   const contacts = useSelector(selectContacts);
